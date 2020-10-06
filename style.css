@@ -1,0 +1,212 @@
+/*
+    Theme Name: Teste UNBOX Matheus Hirota
+    Theme URI: https://teste.servidor.xyz
+    Author: Matheus Hirota
+    Description: Tema para o teste da UNBOX do Matheus Hirota
+    Version: 1.0.0
+    License: RESTRICT
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.website-top, .website-bottom{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.website-top img{
+    display: block;
+    width: 150px;
+}
+.website-bottom{
+    top: auto;
+    bottom: 0;
+}
+.website-bottom p{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.search-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.search-form h1{
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+}
+.search-form form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-form form input{
+    width: calc(70% / 2);
+    height: 50px;
+    border: 1px solid #ccc;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    outline: none;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+}
+.search-form form input:focus{
+    border-color: #333;
+}
+.search-form form input[type="submit"]{
+    width: 9%;
+    cursor: pointer;
+    padding: 0;
+    background-color: rgb(228,0,85);
+    color: #fff;
+    border: 0;
+    font-weight: normal;
+}
+.search-form form input[type="submit"]:hover{
+    background-color: #ab003f;
+}
+.search-form form select{
+    width: 9%;
+    height: 50px;
+    border: 1px solid #ccc;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    outline: none;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.search-results h2{
+    width: 100%;
+    display: block;
+    margin: 25px 0;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.search-results ul{
+    width: 100%;
+    list-style-type: disc;
+}
+
+.search-results ul li b{
+    display: block;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 960px){
+    .container{
+        max-width: 90%;
+    }
+    .search-form{
+        height: auto;
+        margin-top: 100px;
+    }
+    .search-form h1{
+        font-size: 22px;
+    }
+    .search-form form{
+        flex-flow: column;
+    }
+    .search-form form input, .search-form form select{
+        width: 100% !important;
+        margin: 10px 0;
+    }
+    .website-bottom, .website-top{
+        position: relative;
+    }
+    .website-bottom{
+        margin-top: 25px;
+    }
+}
